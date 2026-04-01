@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> Slip 9: Login Form Validation </title>
+	</head>
+
+	<body>
+		<h1> Form Validation </h1>
+
+		<form onsubmit = "return  validate()">
+			Enter Username: <input type = "text" id = "username">
+			<br><br>
+			Enter Password: <input type = "password" id = "password">
+			<br><br><br><br>
+			<input type = "submit" id = "submit" value = "Submit">
+		</form>
+
+		<script>
+			function validate() {
+				var username = document.getElementById("username").value;
+				var password = document.getElementById("password").value;
+
+				if(username == "Admin" && password == "admin1234") {
+					alert("Successful Login. ");
+				}
+
+				else {
+					alert("Invalid Username or Password. ");
+				}
+			}
+		</script>
+	</body>
+</html>

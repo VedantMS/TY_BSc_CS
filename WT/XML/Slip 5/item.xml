@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Items>
+	<item>
+		<name> Book </name>
+		<rate> ₹80 </rate>
+		<quantity> 14 </quantity>
+	</item>
+
+	<item>
+		<name> Pen </name>
+		<rate> ₹40 </rate>
+		<quantity> 8 </quantity>
+	</item>
+
+	<item>
+		<name> Bag </name>
+		<rate> ₹4000 </rate>
+		<quantity> 1 </quantity>
+	</item>
+
+	<item>
+		<name> Pages </name>
+		<rate> ₹800 </rate>
+		<quantity> 400 </quantity>
+	</item>
+
+	<item>
+		<name> Miscellaneous </name>
+		<rate> ₹1000 </rate>
+		<quantity> 10 </quantity>
+	</item>
+</Items>

@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title> Slip 11: Mouse Events </title>
+	</head>
+
+	<body onload = "pageload()">
+		<h1> Student Name </h1>
+
+		<br>
+		
+        <h2> Enter Student Name: </h2>
+		<input type = "text" id = "name" onblur = "checkName()">
+		<br><br>
+        <p id = "imageText"> </p>
+		<img src = "image.jpeg" id = "image" style = "display:none; width:400px" onmouseover = "enlarge()" onclick = "shorten()" onmouseup = "display()">
+
+        <script>
+            function pageload() {
+                alert("Page Loaded. ");
+            }
+
+            function checkName() {
+                var name = document.getElementById("name").value;
+
+                if(name != "") {
+                    document.getElementById("name").style.color = "red";
+                    document.getElementById("name").style.fontSize = "18px";
+                }
+
+                else {
+                    document.getElementById("image").style.display = "block";
+                }
+            }
+
+            function enlarge() {
+                document.getElementById("image").style.width = "800px";
+            }
+
+            function shorten() {
+                document.getElementById("image").style.width = "200px";
+            }
+
+            function display() {
+                document.getElementById("imageText").innerHTML = "Image Dispalay";
+            }
+        </script>
+	</body>
+</html>

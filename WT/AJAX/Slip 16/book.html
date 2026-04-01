@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title> Slip 16: Book Details </title>
+	</head>
+
+	<body>
+		<h1> Book Details </h1>
+		Select Book:	<select id = "book">
+							<option> </option>
+							<option value = "Harry Potter and the Sorcerer's Stone"> Harry Potter and the Sorcerer's Stone </option>
+							<option value = "The Hobbit"> The Hobbit </option>
+							<option value = "The Alchemist"> The Alchemist </option>
+							<option value = "A Song of Ice and Fire"> A Song of Ice and Fire </option>
+							<option value = "The Hunger Games"> The Hunger Games </option>
+						</select>
+		<br><br>
+		<input type = "submit" value = "Submit" onclick = "display()">
+
+		<p id = "details"> </p>
+
+		<script>
+			function display() {
+				var xhr = new XMLHttpRequest();
+				xhr.onreadystatechange = function() {
+					if(this.readyState == 4 && this.status == 200) {
+						document.getElementById("details").innerHTML = this.responseText;
+					}
+				}
+
+				var book = document.getElementById("book").value;
+				xhr.open("GET", "book.php?q=" + book, true);
+				xhr.send();
+			}
+		</script>
+		
+	</body>
+</html>
