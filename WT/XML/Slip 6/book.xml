@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Books>
+	<book id = "1" category = "Fantasy">
+		<name> Harry Potter and the Sorcerer's Stone </name>
+		<author> J. K. Rowling </author>
+		<price> ₹450 </price>
+	</book>
+
+	<book id = "2" category = "Fantasy">
+		<name> The Hobbit </name>
+		<author> J. R. R. Tolkien </author>
+		<price> ₹400 </price>
+	</book>
+
+	<book id = "3" category = "Fiction">
+		<name> The Alchemist </name>
+		<author> Paulo Coelho </author>
+		<price> ₹400 </price>
+	</book>
+
+	<book id = "4" category = "Fantasy">
+		<name> A Song of Ice and Fire </name>
+		<author> R. R. Martin </author>
+		<price> ₹450 </price>
+	</book>
+
+	<book id = "5" category = "Fiction">
+		<name> The Hunger Games </name>
+		<author> Suzanne Collins </author>
+		<price> ₹400 </price>
+	</book>
+</Books>
