@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title> Slip 18: Fibonacci Series </title>
+	</head>
+
+	<body>
+		<h1> Fibonacci Series </h1>
+
+		Enter Number: <input type = "number" id = "num">
+		<br><br>
+		<input type = "submit" value = "Submit" onclick = "fibonacci()">
+        
+		<script>
+			function fibonacci() {
+				var num = document.getElementById("num").value;
+				var a = 0, b = 1, c = 0;
+				
+                document.write("<h1> Fibonacci Series </h1>");
+
+				for(var i = 0; i < num; i++) {
+					document.write(c + "\t");
+					a = b;
+					b = c;
+					c = a + b;
+				}
+			}
+		</script>
+	</body>
+</html>

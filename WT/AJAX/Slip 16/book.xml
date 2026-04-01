@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Books>
+	<book>
+		<title>Harry Potter and the Sorcerer's Stone</title>
+		<author>J. K. Rowling</author>
+        <year>1997</year>
+		<price>₹450</price>
+	</book>
+
+	<book>
+		<title>The Hobbit</title>
+		<author>J. R. R. Tolkien</author>
+        <year>1937</year>
+		<price>₹400</price>
+	</book>
+
+	<book>
+		<title>The Alchemist</title>
+		<author>Paulo Coelho</author>
+        <year>1988</year>
+		<price>₹400</price>
+	</book>
+
+	<book>
+		<title>A Song of Ice and Fire</title>
+		<author>R. R. Martin</author>
+        <year>1996</year>
+		<price>₹450</price>
+	</book>
+
+	<book>
+		<title>The Hunger Games</title>
+		<author>Suzanne Collins</author>
+        <year>2008</year>
+		<price>₹400</price>
+	</book>
+</Books>
