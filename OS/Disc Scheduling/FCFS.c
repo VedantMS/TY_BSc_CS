@@ -9,13 +9,13 @@ int main() {
 
     int requests[n], head;
 
-    printf("Enter Current Head Position: ");
-    scanf("%d", &head);
-
     printf("Enter Requests: ");
     for(int i = 0; i < n; i++)  scanf("%d", &requests[i]);
 
-    printf("Order: ");
+    printf("Enter Initial Head Position: ");
+    scanf("%d", &head);
+
+    printf("\nOrder: ");
     for(int i = 0; i < n; i++) {
         printf("%d\t", requests[i]);
         total_head_movement += abs(head - requests[i]);
