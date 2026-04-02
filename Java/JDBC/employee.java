@@ -68,7 +68,7 @@ class employee extends JFrame implements ActionListener {
             try {
                 Class.forName("org.postgresql.Driver");
 
-                Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/tybsccs", "postgres", "godspell");
+                Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/tybsccs", "postgres", "spellbound");
 
                 PreparedStatement ps = conn.prepareStatement("insert into employee values(?, ?, ?, ?);");
 

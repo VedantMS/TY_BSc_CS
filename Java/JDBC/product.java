@@ -10,7 +10,7 @@ class product {
 
         try {
             Class.forName("org.postgresql.Driver");
-            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/tybsccs", "postgres", "godspell");
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/tybsccs", "postgres", "spellbound");
             st = conn.createStatement();
 
             System.out.println("1.\tAdd Data \n2.\tDisplay \n3.\tExit \n\n");
