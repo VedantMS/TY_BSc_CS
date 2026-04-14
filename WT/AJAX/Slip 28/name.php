@@ -4,11 +4,11 @@
     $username = $_GET['username'];
     $password = $_GET['password'];
 
-    $data = pg_query($conn, "select exists (select 1 from uname where username = '$username' and password = '$password');");
+    $data = pg_query($conn, "select * from uname where username = '$username' and password = '$password';");
     
     $row = pg_fetch_assoc($data);
 
-    if($row['exists'] == 't') {
+    if($row) {
         echo "Login Successful. ";
     }
 

@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <input type = 'text' id = 'data' onkeyup = "display()"><br>
+        <p id = "para"> </p>
+
+        <script>
+            function display() {
+                var xhr = new XMLHttpRequest();
+                
+                xhr.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) {
+                        document.getElementById("para").innerHTML = this.responseText;
+                    }
+                }
+
+                var data = document.getElementById("data").value;
+                xhr.open("GET", "data.php?data=" + data, true);
+                xhr.send();
+            }
+
+        </script>
+    </body>
+</html>
