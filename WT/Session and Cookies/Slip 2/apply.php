@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title> Slip 2.3 : Preferences Apply </title>
+        <title> Slip 2.2 : Preferences Apply </title>
     </head>
     
     <body style = "font-style: <?php echo $_COOKIE['font']; ?>;
