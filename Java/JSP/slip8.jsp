@@ -16,9 +16,9 @@
                     }
                 }
 
-                if(flag)    out.println("<p style='color: red'> Prime Number. </p> ");
+                if(flag)    out.println("<p style='color: blueviolet'> Prime Number. </p> ");
 
-                else        out.println("<p style='color: red'> Not a Prime Number. </p> ");
+                else        out.println("<p style='color: blueviolet'> Not a Prime Number. </p> ");
             }
         %>
     <body>
