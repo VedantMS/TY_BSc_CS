@@ -1,10 +1,10 @@
 import java.util.*;
 
-class random_square_cube extends Thread {
+class slip7 extends Thread {
     static int num;
     String type;
 
-    random_square_cube(String s) {
+    slip7(String s) {
         type = s;
     }
 
@@ -40,9 +40,9 @@ class random_square_cube extends Thread {
     }
 
     public static void main(String[] args) {
-        random_square_cube t1 = new random_square_cube("Generate");
-        random_square_cube t2 = new random_square_cube("Square");
-        random_square_cube t3 = new random_square_cube("Cube");
+        slip7 t1 = new slip7("Generate");
+        slip7 t2 = new slip7("Square");
+        slip7 t3 = new slip7("Cube");
 
         t1.start();
         t2.start();

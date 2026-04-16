@@ -25,6 +25,5 @@ public class slip2 extends HttpServlet {
         while(servlets.hasMoreElements()) {
             pw.println(servlets.nextElement() + "<br>");
         }
-
     }
 }

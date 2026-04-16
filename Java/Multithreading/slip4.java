@@ -1,9 +1,9 @@
 import javax.swing.*;
 
-class blink_text extends JFrame implements Runnable {
+class slip4 extends JFrame implements Runnable {
     JLabel blink;
 
-    blink_text() {
+    slip4() {
         setVisible(true);
         setLayout(null);
         setTitle("Blink Text");
@@ -31,7 +31,7 @@ class blink_text extends JFrame implements Runnable {
     }
 
     public static void main(String[] args) {
-        Thread t = new Thread(new blink_text());
+        Thread t = new Thread(new slip4());
         t.start();
     }
 }

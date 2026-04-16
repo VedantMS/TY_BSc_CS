@@ -1,4 +1,5 @@
-class alphabets extends Thread {
+class slip1 extends Thread {
+    
     public void run() {
         for(char ch = 'A'; ch <= 'Z'; ch++) {
             System.out.println(ch);
@@ -14,7 +15,7 @@ class alphabets extends Thread {
     }
 
     public static void main(String[] args) {
-        alphabets t = new alphabets();
+        slip1 t = new slip1();
         t.start();
     }
 }
