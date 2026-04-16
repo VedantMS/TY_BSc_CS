@@ -4,12 +4,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class employee extends JFrame implements ActionListener {
+class slip1 extends JFrame implements ActionListener {
     JLabel l1, l2, l3, l4;
     JTextField eno, ename, designation, salary;
     JButton submit, clear;
 
-    employee() {
+    slip1() {
         setSize(1000, 1000);
         setVisible(true);
         setLayout(null);
@@ -94,6 +94,6 @@ class employee extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new employee();
+        new slip1();
     }
 }

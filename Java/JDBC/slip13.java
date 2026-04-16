@@ -1,6 +1,6 @@
 import java.sql.*;
 
-class database_info {
+class slip13 {
     public static void main(String[] args) {
         try {
             Class.forName("org.postgresql.Driver");
